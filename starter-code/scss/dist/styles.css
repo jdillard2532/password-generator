@@ -120,7 +120,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+
+.container {
+  margin-top: 8.31rem;
 }
 
 .slider-container .slider {
@@ -239,6 +242,9 @@ main {
 @media (max-width: 650px) {
   main {
     height: auto;
+  }
+  main .container {
+    margin-top: 4rem;
   }
   .form {
     width: auto;

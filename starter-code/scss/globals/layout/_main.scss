@@ -2,12 +2,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
+.container {
+  margin-top: 8.31rem;
+}
 .slider-container {
   .slider {
     width: 100%;
   }
 }
-

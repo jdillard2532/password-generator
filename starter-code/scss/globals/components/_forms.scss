@@ -120,6 +120,9 @@
 @media (max-width: 650px) {
   main {
     height: auto;
+    .container {
+      margin-top: 4rem;
+    }
   }
   .form {
     width: auto;
