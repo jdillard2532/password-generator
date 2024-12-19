@@ -11,7 +11,7 @@ input[type="checkbox"] + label::before {
   position: absolute;
   content: "";
   left: 0.25rem;
-  top: 0.06rem;
+  top: 0.3rem;
   width: 0.8rem;
   height: 0.8rem;
   outline: 2px solid #fff;
@@ -22,7 +22,7 @@ input[type="checkbox"]:checked + label::after {
   position: absolute;
   content: "";
   left: 0.25rem;
-  top: 0.06rem;
+  top: 0.3rem;
   width: 0.8rem;
   height: 0.8rem;
   outline: 2px solid var(--green);
@@ -33,10 +33,10 @@ input[type="checkbox"]:checked + label::after {
   position: absolute;
   content: "";
   left: 0.25rem;
-  top: 0.06rem;
+  top: 0.3rem;
   width: 0.8rem;
   height: 0.8rem;
-  background-image: url(/starter-code/assets/images/icon-check.svg);
+  background-image: url(/password-generator/starter-code/assets/images/icon-check.svg);
   transform: scale(1);
   transition: all 0.3s ease;
 }
@@ -44,9 +44,9 @@ input[type="checkbox"]:not(checked) + label::after {
   position: absolute;
   content: "";
   left: 0.25rem;
-  top: 0.06rem;
+  top: 0.3rem;
   width: 0.8rem;
   height: 0.8rem;
-  background-image: url(/starter-code/assets/images/icon-check.svg);
+  background-image: url(/password-generator/starter-code/assets/images/icon-check.svg);
   transform: scale(0);
 }
