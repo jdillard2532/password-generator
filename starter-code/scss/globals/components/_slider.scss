@@ -1,0 +1,50 @@
+.slider {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 8px;
+  background: linear-gradient(90deg, var(--gray-400) 0%, var(--gray-400) 60%);
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+}
+
+.slider::-moz-range-thumb:active {
+  background-color: var(--gray-400);
+  border: 1px solid var(--green);
+}
+
+.copy {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--green);
+  .copiedStatus {
+    padding-right: 1rem;
+  }
+}
+
+.copy:hover {
+  color: #fff;
+}

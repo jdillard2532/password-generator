@@ -1,0 +1,52 @@
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 2.5rem;
+  cursor: pointer;
+  display: inline-block;
+}
+input[type="checkbox"] + label::before {
+  position: absolute;
+  content: "";
+  left: 0.25rem;
+  top: 0.06rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  outline: 2px solid #fff;
+  background: var(--gray-300);
+}
+
+input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  content: "";
+  left: 0.25rem;
+  top: 0.06rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  outline: 2px solid var(--green);
+  background: var(--green);
+}
+
+input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  content: "";
+  left: 0.25rem;
+  top: 0.06rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-image: url(/starter-code/assets/images/icon-check.svg);
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+input[type="checkbox"]:not(checked) + label::after {
+  position: absolute;
+  content: "";
+  left: 0.25rem;
+  top: 0.06rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-image: url(/starter-code/assets/images/icon-check.svg);
+  transform: scale(0);
+}
